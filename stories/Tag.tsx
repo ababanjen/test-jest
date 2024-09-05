@@ -23,7 +23,7 @@ const Tag = ({ className, type = 0, children }: Props) => {
     }
   };
   const classNames = twMerge(
-    clsx("rounded-[4px]", className, getTagClasses(type))
+    clsx("rounded-[4px] py-1 px-2", className, getTagClasses(type))
   );
   return <div className={classNames}>{children}</div>;
 };

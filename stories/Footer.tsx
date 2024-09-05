@@ -18,7 +18,7 @@ const Footer = ({ tags }: Props) => {
           <div className="flex flex-row gap-x-2">
             {tag.info.map((info, index) => (
               <Tag type={index} key={index}>
-                <div className="flex py-1 px-2 gap-1 items-center">
+                <div className="flex gap-1 items-center">
                   <span className="font-semibold text-sm">{info.name}</span>
                   <span>:</span>
                   <span className="text-sm">{info.status}</span>
